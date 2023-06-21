@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num1 = parseInt(prompt("em ordem crescente"));
+      var num2 = parseInt(prompt("em ordem crescente"));
+      var num3 = parseInt(prompt("em ordem crescente"));
+      var num4 = parseInt(prompt("Digite o quarto valor"));
+      if (num4 < num1) {
+        alert("O quarto número não segue a ordem crescente.");
+      } else if (num4 < num2) {
+        alert("O quarto número está entre o primeiro e o segundo número.");
+      } else if (num4 < num3) {
+        alert("O quarto número está entre o segundo e o terceiro número.");
+      } else {
+        alert("O quarto número é maior que o terceiro número.");
+      }
+    </script>
+  </body>
+</html>

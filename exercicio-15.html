@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nome = prompt("Digite seu nome:");
+      let idade = parseInt(prompt("Digite sua idade:"));
+      let salario = parseFloat(prompt("Digite seu salário:"));
+      let sexo = prompt("Digite seu sexo (f/m):");
+      let estadoCivil = prompt("Digite seu estado civil (s/c/v/d):");
+
+      while (
+        nome.length <= 3 ||
+        idade < 0 ||
+        idade > 150 ||
+        salario <= 0 ||
+        (sexo !== "f" && sexo !== "m") ||
+        (estadoCivil !== "s" &&
+          estadoCivil !== "c" &&
+          estadoCivil !== "v" &&
+          estadoCivil !== "d")
+      ) {
+        alert(
+          "Alguma informação está inválida. Verifique os critérios e digite novamente."
+        );
+
+        nome = prompt("Digite seu nome:");
+        idade = parseInt(prompt("Digite sua idade:"));
+        salario = parseFloat(prompt("Digite seu salário:"));
+        sexo = prompt("Digite seu sexo (f/m):");
+        estadoCivil = prompt("Digite seu estado civil (s/c/v/d):");
+      }
+
+      alert("Informações válidas:");
+      alert("Nome:" + nome);
+      alert("Idade:" + idade);
+      alert("Salário:" + salario);
+      alert("Sexo:" + sexo);
+      alert("Estado Civil:" + estadoCivil);
+    </script>
+  </body>
+</html>

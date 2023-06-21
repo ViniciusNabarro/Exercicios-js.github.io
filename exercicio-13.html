@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nota = parseFloat(prompt("Digite uma nota entre zero e dez:"));
+
+      while (nota < 0 || nota > 10 || isNaN(nota)) {
+        alert("Valor inválido. Por favor, digite uma nota entre zero e dez.");
+        nota = parseFloat(prompt("Digite uma nota entre zero e dez:"));
+      }
+
+      alert("Valor válido informado:", nota);
+    </script>
+  </body>
+</html>
